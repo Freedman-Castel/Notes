@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    ".circle").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    ".circle").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+                    
+            }
+        };
+    </script>
+    <div class="circle"></div>
+    <nav>
+        <ul>
+        <li>Login</li>
+        <li><a href="floats 3.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        </ul>
+     </nav>
+        
+    <section class="title_background">
+        <div class="title">
+            <h2>THE JOURNEY BEGINS</h2>
+        </div>
+    </section>
+    <section class="Babysteps">
+        <div class="vertical-text"> 
+             <h2>Simple Beginnings</h2>
+        </div>
+        <div class="body"> 
+            <h1>LET'S EXPERIMENT</h1>
+            <p class="subheading"> Playing Around in Code-Land</p>
+            <button>does this button work?</button>
+            <button type="button">what about this one?</button><br>
+            <p>and the last one through css and make it go someplace (with class selector used for the button design to diffrentiate from the other buttons design)</p>
+        <div class="button"><a href="https://yefreedmancastel.wixsite.com/freedman-castel">Freedman-Castel</a>
+        </div>
+            <p>links are always fun- who needs 'buttons' anyways? Let's just use a link..</p>
+            <a href="https://yefreedmancastel.wixsite.com/freedman-castel" target="_blank">https://yefreedmancastel.wixsite.com/freedman-castel</a>
+            <p>but we can do better..let's add some text to the link when i hover over it!</p>
+            <a href="https://yefreedmancastel.wixsite.com/freedman-castel" target="_blank" title="Freedman-Castel old site">https://yefreedmancastel.wixsite.com/freedman-castel </a>
+            <p> show as chosen text rather than the link</p>
+            <a href="https://yefreedmancastel.wixsite.com/freedman-castel" target="_blank" title="Freedman-Castel old site">Freedman-Castel</a>
+            <p>what if i want to link to a file on the computer?</p>
+            <a href="general ad1.jpg">general advert</a>
+            <p>and now i want to take a look at a link using the dot dot feature going up in directory to a downloadable word document</p>
+            <a href="../practicing code-test1website/price list-to practice ..feature/PRICE LIST.pdf">price list</a>
+            <p>lets show my image with an image tag saved in a seperate web page</p>
+            <a href="image_file_1.html">Gedolim Portraits Advert</a>
+            <H3>this has been a lot of fun!</H3>
+            <P>BUT i must give credit where credit is due.</p>
+            <ol start="73">
+                <li><a href="https://www.w3schools.com/"title="https://www.w3schools.com/">w3schools</a></li>
+                <li><a href="https://internetingishard.netlify.app/html-and-css/index.html"title="https://internetingishard.netlify.app/html-and-css/index.html">interneting is hard</a></li>
+                <li><a href="https://bard.google.com/"title="https://bard.google.com/">and Bard</a> </li>
+            </ol>
+     <!-- <p>i guess we can cite them properly too.</p>
+            <ul>
+                <li><blockquote cite="https://www.w3schools.com/" >quite a helpful tool when you get to know it</blockquote></li>
+                <li> <blockquote> cite="https://internetingishard.netlify.app/html-and-css/index.html" >the place to go to refresh your mind how to do things</blockquote></li>    
+                <li><blockquote> cite="and most importantly -Bard</blockquote></li>
+            </ul>
+             <p>ok, i guess i can't get ahead of myself the cite feature i <em><strong>tried</strong></em> did'nt do anything </p> -->
+        </div>
+    </section>
+    <section class="visual">
+    </section>
+    <section class="floats">
+        <div class="vertical-text"> 
+            <H2>Floats-set-up</H2>
+        </div>
+        <div class="content">
+            <img class="img2" src="COMPUTER SHINING.jpg" style="max-width: 100%; height: auto;" alt="computer screen shining">
+            <img class="img2" src="COMPUTER SHINING.jpg" style="max-width: 100%; height: auto;" alt="computer screen">
+            <P>Lorem ipsum,
+            <span>It doesnt matter what I really write here, as it is giving the message of a body of text just by me typing letters. They don't have to be real words and could be in any language.
+            Lorem ipsum is a feature that types the text for me. I dont really care what it says only that it is a slab of text. let's test it out.</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam maxime, delectus aut quisquam, iure dolor excepturi voluptatem repudiandae repellendus adipisci laudantium pariatur. Quo maxime asperiores totam quia harum eius earum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quam inventore nobis fugit error. Quo, ipsum vitae deleniti maxime facilis ex, mollitia dicta ea quasi dolor eligendi eaque quibusdam repudiandae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, temporibus modi, vel possimus perferendis aperiam et repellat ut accusamus nisi alias eligendi vero, voluptate quis. Consequuntur voluptatem nam enim voluptas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloribus dignissimos quo placeat laudantium molestias deleniti odio assumenda, sit quos eaque perspiciatis officia possimus magni fuga eius! Quam, laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, labore obcaecati maiores ratione, quod accusamus veritatis unde nihil praesentium, laboriosam libero tempore enim consequatur ipsum? Earum ex tenetur recusandae <quis class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat tenetur officiis inventore, necessitatibus tempore perspiciatis natus odit quisquam deleniti! Illum at voluptate ipsam dolor alias mollitia enim nisi neque ullam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iste vitae asperiores neque minus fugit perspiciatis impedit at doloribus accusantium! Ipsam voluptatem quae Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non quidem inventore sapiente nam cumque impedit unde iure ea expedita vitae atque laudantium et, totam error adipisci. Non facilis suscipit sunt.;Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit cum delectus quia magni. Non autem atque enim sit ipsa, quam neque reiciendis tempora, similique harum corrupti ullam impedit, tenetur dignissimos?lorem
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur adipisci, ad facilis deserunt in omnis veritatis, soluta laboriosam voluptatibus et quia aut velit placeat atque expedita veniam aliquid eum sunt!consequuntur molestiae mollitia veniam placeat pariatur quia.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quis officia eveniet quaerat earum nemo ipsum consectetur, laboriosam dolore et quod assumenda eos laudantium possimus illo reiciendis necessitatibus facilis suscipit!lorem ipsum is a feature that types the text for me. I dont really care what it says only that it is a slab of text. let's test it out. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam maxime, delectus aut quisquam, iure dolor excepturi voluptatem repudiandae repellendus adipisci laudantium pariatur. Quo maxime asperiores totam quia harum eius earum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quam inventore nobis fugit error. Quo, ipsum vitae deleniti maxime facilis ex, mollitia dicta ea quasi dolor eligendi eaque quibusdam repudiandae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, temporibus modi, vel possimus perferendis aperiam et repellat ut accusamus nisi alias eligendi vero, voluptate quis. Consequuntur voluptatem nam enim voluptas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloribus dignissimos quo placeat laudantium molestias deleniti odio assumenda, sit quos eaque perspiciatis officia possimus magni fuga eius! Quam, laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, labore obcaecati maiores ratione, quod accusamus veritatis unde nihil praesentium, laboriosam libero tempore enim consequatur ipsum? Earum ex tenetur recusandae <quis class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat tenetur officiis inventore, necessitatibus tempore perspiciatis natus odit quisquam deleniti! Illum at voluptate ipsam dolor alias mollitia enim nisi neque ullam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iste vitae asperiores neque minus fugit perspiciatis impedit at doloribus accusantium! Ipsam voluptatem quae consequuntur molestiae mollitia veniam placeat pariatur quia. </p>
+            </p>
+        </div>
+    </section>
+  
+    <section>  
+        <div class="vertical-text"> 
+            <H2 class="Gallery">Gallery</H2>
+        </div>
+        <div class="container">
+            <img src="coding-unsplash.jpg">
+            <img src="coding2-unsplash.jpg">
+            <img src="computer shining2-unsplash.jpg">
+            <img src="computer shining3-unsplash.jpg">
+            <img src="coding3-unsplash.jpg">
+            <img src="coding 4-unsplash.jpg">
+            <img src="coding5 - unsplass.jpg">
+            <img src="coding6-unsplash.jpg">
+            <img src="computer shining 4-unsplash.jpg">
+            <img src="computer shining5.jpg">
+        </div>
+   </section>
+   <section class="signup">
+    <footer>
+        <h2> - How did I do? Help me improve! -</h2>
+            <a class="button4" href="form.html">yes, i'd love to give feedback!</a>
+            <a class="button5" href="#">let me first relook over your site</a>
+        </ul>
+    </footer>
+   </section>
+</body>
+</html>
+
+<!-- SOURCED https://codepen.io/Dhruv-Mehta/pen/LYMOGjN -->
