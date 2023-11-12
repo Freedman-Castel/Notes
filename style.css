@@ -1,0 +1,280 @@
+.circle {
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 80px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid crimson;
+    border-radius: 100%;
+    position: center;
+    vertical-align: middle;
+    animation: rotateCircles 5.1s linear infinite;
+    /* throttle: 0 */
+ }
+ 
+ .circle::before {
+    position: absolute;
+    top: 29px;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 100%;
+    box-shadow: 0 0 10px 6px rgba(237, 20, 61, .8);
+ }
+ 
+ @keyframes rotateCircles {
+    form {
+       transform: rotate(0);
+    }
+ 
+    to {
+       transform: rotate(360deg);
+    }
+ }
+
+
+/* ***********page layout********** */
+body {
+	font-family: sans-serif;
+}
+
+* {
+   margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+section {
+   min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	color: white;
+    padding: 20px;
+}
+
+h2 {
+	font-family: Garamond, sans-serif;
+}
+
+p, body {
+   color: #2d051b;
+   font-size: medium;
+   text-align:     center;
+   line-height: 1.5;
+    cursor:       pointer;
+ }
+
+ 
+/* mobile*/
+@media  (max-width: 600px)  {
+   .vertical-text {
+      display: flex;
+      flex-direction:row ;
+   }
+ }
+ 
+ /*Tablet Styles */
+ @media only screen and (min-width: 601px) and (max-width: 960px) {
+   body {
+   }
+ }
+ 
+ /* Desktop Styles */
+ @media only screen and (min-width: 961px) {
+   body {
+   }
+ }
+
+ .vertical-text  {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   transform: rotate(-90deg);
+   font-size: 1em;
+}
+
+/* *********1st section-heading/title*********** */
+.title_background{
+	background-image: url("COMPUTER\ SHINING.jpg");
+	background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover; 
+	position:relative;
+   background-attachment: fixed; 
+   color: white;
+}
+
+.title {
+   padding: 10px;
+   display: flex;
+   background-color: #738d96a6;
+}
+
+ /* ********section 2 - html/css prac****** */
+ .Babysteps {
+	background: linear-gradient(-45deg, #ee7752,   #e73c7e, #23a6d5, #23d5ab);
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   border-bottom: 5px solid rgba(198, 45, 45, 120);
+   position: relative;	
+   box-shadow: 0px -20px 400px 0px #5AE8DE;
+ }
+
+ h1{
+   cursor: help;
+   color: #b4b1cd;
+   text-align:     center;
+   font-style: normal;
+   border: 5px solid rgba(198, 45, 45, 120);
+}
+
+li{
+  display: inline-block;
+}
+
+.button {
+   color: #fff;
+   background-color: #5995da;
+   font-weight: bold;
+   padding: 20px;
+   text-align: center;
+   border: 2px solid #5d6063;
+   border-radius: 5px;
+   width: 200px;
+   margin: 20px auto;
+}
+
+button{
+   color: rgb(159, 3, 114);
+   border-color: rgb(179, 90, 162);
+   background-color: rgb(227, 157, 192);
+   background-size: contain;
+}
+   
+.body {
+   flex-grow: 2;
+   grid-template-columns: 1fr 3fr;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content:flex-end;
+}
+
+h3::before {
+   content: "SEE WHAT I JUST DID?";
+   color: red;
+   visibility: hidden;
+   border: 5px solid blue;
+ }
+ 
+ h3:hover::before {
+   visibility: visible;
+ }
+
+ h3:hover{
+   visibility: hidden;
+ }
+.subheading{ 
+   font-style: italic;
+   font-size: larger;
+   font-weight: bold;}
+
+a {
+   font-size: 16px; 
+}
+
+/* ******3rd section - image break********* */
+.visual {
+   min-height: 70vh;
+   background-image: url(coding-unsplash.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover; 
+   position:relative;
+   background-attachment: fixed; 
+   color: white;
+}
+
+/* *******4th section -floats****** */
+.floats {
+	background: linear-gradient(45deg, #ffb3b3, #ffcccc, #ccccff, #23d5ab);
+   /* display: flex ; */
+   min-height: 70vh;
+   
+}
+span{
+   font-size: 1.6em;
+}
+
+.img2{
+   float: left;
+   margin: 20px;
+   /* display: block; */
+}
+
+/* .clear {
+   clear: both;
+ } */
+
+/* ******5th section - flex box image gallery**** */
+.Gallery{
+   color: #5995da;
+}
+
+.container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+img{
+   width: 400px;
+   height: 300px;
+   margin: 8px;
+   transition: all 1s;
+ }
+ 
+ img:hover {
+    transform: scale(1.1);
+ }
+
+ /* -------------6th section - signup------------ */
+
+.signup {
+   background-color: #23a6d5;
+   min-height: 10vh;
+   /* border-top: 5px solid rgba(198, 45, 45, 120); */
+   position: relative;	
+   box-shadow: 0px -20px 400px 0px #5AE8DE;
+}
+a.button4:link, a.button4:visited{
+background-color: #f44336;
+color: white;
+padding: 14px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
+
+a.button4:hover, a.button4:active{
+   background-color: rgb(101, 213, 183);
+}
+
+a.button5:link, a.button5:visited {
+   background-color: white;
+   color: black;
+   border: 4px solid rgb(219, 61, 172);
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+ }
+ 
+ a.button5:hover, a.button5:active {
+   background-color: rgb(219, 61, 172);
+   color: white;
+ }
